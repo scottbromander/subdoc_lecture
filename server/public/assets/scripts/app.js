@@ -49,8 +49,6 @@ function appendInfo(data){
     }
 }
 
-//<a href="http://www.w3schools.com">Visit W3Schools.com!</a>
-
 function stripLinks(array, object) {
     object = {
         username: $("#username").val(),
