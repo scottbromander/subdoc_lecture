@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var user = require('./routes/user');
+//var user = require('./routes/user');
 var index = require('./routes/index');
 
 app.set("port", (process.env.PORT || 5000));
@@ -25,7 +25,7 @@ MongoDB.once('open', function(err){
 });
 
 // ROUTES //
-app.use('/user', user);
+//app.use('/user', user);
 app.use('/', index);
 
 app.listen(app.get("port"), function(){
